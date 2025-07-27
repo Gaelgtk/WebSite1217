@@ -17,7 +17,7 @@ export default function InscriptionPage() {
   <div
     className="w-full h-full"
     style={{
-      backgroundImage: `url('/fondaccueil.png')`,
+      backgroundImage: `url('/mulan.png')`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'right center',
