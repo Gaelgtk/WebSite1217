@@ -41,21 +41,25 @@ export default function PlusGrandGouverneurPage() {
     >
       {/* IMAGE DROITE AVEC FONDU */}
       <div className="absolute top-0 right-0 h-full w-2/5 z-0 pointer-events-none">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url('/fondaccueil.png')`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right center",
-            maskImage:
-              "linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))",
-            WebkitMaskImage:
-              "linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))",
-          }}
-        />
-      </div>
-
+  <div
+    className="w-full h-full"
+    style={{
+      backgroundImage: `url('/fondaccueil.png')`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'right center',
+      WebkitMaskImage:
+        'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
+      maskImage: 'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
+      WebkitMaskSize: '100% 100%',
+      maskSize: '100% 100%',
+      WebkitMaskRepeat: 'no-repeat',
+      maskRepeat: 'no-repeat',
+      minHeight: '100vh', // important
+      backgroundColor: '#000', // fallback visuel
+    }}
+  />
+</div>
       {/* OMBRAGE */}
       <div className="absolute inset-0 bg-black/30 z-[1]" />
 

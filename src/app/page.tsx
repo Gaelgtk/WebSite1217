@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
   return (
@@ -43,19 +42,25 @@ export default function Home() {
 
       {/* === IMAGE DROITE AVEC FONDU VERS LA GAUCHE === */}
       <div className="absolute top-0 right-0 h-full w-2/5 z-0 pointer-events-none">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage: `url('/fondaccueil.png')`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right center',
-            maskImage: 'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
-            WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
-          }}
-        />
-      </div>
-
+  <div
+    className="w-full h-full"
+    style={{
+      backgroundImage: `url('/fondaccueil.png')`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'right center',
+      WebkitMaskImage:
+        'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
+      maskImage: 'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
+      WebkitMaskSize: '100% 100%',
+      maskSize: '100% 100%',
+      WebkitMaskRepeat: 'no-repeat',
+      maskRepeat: 'no-repeat',
+      minHeight: '100vh', // important
+      backgroundColor: '#000', // fallback visuel
+    }}
+  />
+</div>
       {/* === CONTENU PRINCIPAL === */}
       <main className="relative z-10 flex-1 flex flex-col items-start justify-center text-white px-10">
         <h1 className="text-4xl font-bold mb-4">Bienvenue sur mon site Next.js</h1>
@@ -67,7 +72,7 @@ export default function Home() {
       {/* === RECTANGLES CLIQUABLES === */}
       <section className="relative z-10 px-10 py-8 w-full flex flex-col md:flex-row gap-6">
         {/* Grand rectangle gauche */}
-        <Link
+        <a
           href="https://lookerstudio.google.com/reporting/48713b01-bb57-4a6a-8096-2a1d9e0d9aaf"
           target="_blank"
           rel="noopener noreferrer"
@@ -83,12 +88,12 @@ export default function Home() {
             </div>
             <h2 className="text-xl font-bold text-white">KVK en cours</h2>
           </div>
-        </Link>
+        </a>
 
         {/* Colonne droite */}
         <div className="md:w-full flex flex-col gap-6">
           {/* Rectangle haut droit */}
-          <Link
+          <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScSijpJgH_FhIbQ2VkCvdQ6IN0bZdKznTGzFIYELwFLu7Wu3w/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
@@ -104,10 +109,10 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-white">Inscription Ark of Osiris 10/08 22h UTC</h3>
             </div>
-          </Link>
+          </a>
 
           {/* Rectangle bas droit */}
-          <Link
+          <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSdzBN7kSuuvXq26nmgv0g3PCb68esHGUSi2j3mFA0OCU9COpQ/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
@@ -123,7 +128,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-white">Inscription MGE INF 28/07</h3>
             </div>
-          </Link>
+          </a>
         </div>
       </section>
     </div>
