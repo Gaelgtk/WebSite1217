@@ -41,31 +41,30 @@ export default function Home() {
       </header>
 
       {/* === IMAGE DROITE AVEC FONDU VERS LA GAUCHE === */}
-      <div className="absolute top-0 right-0 h-full w-2/5 z-0 pointer-events-none">
+      <div className="absolute top-0 right-0 h-screen w-2/5 z-0 pointer-events-none">
   <div
     className="w-full h-full"
     style={{
-      backgroundImage: `url('/fondaccueil.png')`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'right center',
+      backgroundImage: "url('/fondaccueil.png')",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "right center",
       WebkitMaskImage:
-        'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
-      maskImage: 'linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))',
-      WebkitMaskSize: '100% 100%',
-      maskSize: '100% 100%',
-      WebkitMaskRepeat: 'no-repeat',
-      maskRepeat: 'no-repeat',
-      minHeight: '100vh', // important
-      backgroundColor: '#000', // fallback visuel
+        "linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))",
+      maskImage: "linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))",
+      WebkitMaskSize: "100% 100%",
+      maskSize: "100% 100%",
+      WebkitMaskRepeat: "no-repeat",
+      maskRepeat: "no-repeat",
+      backgroundColor: "#000",
     }}
   />
 </div>
       {/* === CONTENU PRINCIPAL === */}
       <main className="relative z-10 flex-1 flex flex-col items-start justify-center text-white px-10">
-        <h1 className="text-4xl font-bold mb-4">Bienvenue sur mon site Next.js</h1>
+        <h1 className="text-4xl font-bold mb-4">Bienvenue sur le site du KD 1217</h1>
         <p className="text-lg max-w-xl">
-          Voici une démonstration d’une image positionnée à droite avec un fondu progressif pour s’intégrer au fond.
+          Vous y trouverez les dasboards de statistiques de tout les kvks référencés, ainsi que chaque inscriptions aux mge ou osiris. Un calendrier est egalement en construction.
         </p>
       </main>
 
