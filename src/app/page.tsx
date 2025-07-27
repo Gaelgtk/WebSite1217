@@ -65,52 +65,67 @@ export default function Home() {
       </main>
 
       {/* === RECTANGLES CLIQUABLES === */}
-<section className="relative z-10 px-10 py-8 w-full flex flex-col md:flex-row gap-6">
-  {/* Grand rectangle gauche */}
-  <Link href="/page-gauche" className="md:w-[350px] w-full group">
-    <div className="bg-white/05 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer">
-      <div className="overflow-hidden rounded-xl mb-4">
-        <img
-          src="/periode3.png"
-          alt="Image gauche"
-          className="w-full h-[380px] object-cover transform transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
-      <h2 className="text-xl font-bold text-white">KVK en cours</h2>
-    </div>
-  </Link>
+      <section className="relative z-10 px-10 py-8 w-full flex flex-col md:flex-row gap-6">
+        {/* Grand rectangle gauche */}
+        <Link
+          href="https://lookerstudio.google.com/reporting/48713b01-bb57-4a6a-8096-2a1d9e0d9aaf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:w-[350px] w-full group"
+        >
+          <div className="bg-white/05 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer">
+            <div className="overflow-hidden rounded-xl mb-4">
+              <img
+                src="/periode3.png"
+                alt="Image gauche"
+                className="w-full h-[380px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+            <h2 className="text-xl font-bold text-white">KVK en cours</h2>
+          </div>
+        </Link>
 
-  {/* Colonne droite */}
-  <div className="md:w-full flex flex-col gap-6">
-    {/* Rectangle haut droit */}
-    <Link href="/page-haut-droit" className="group">
-      <div className="bg-white/08 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer md:w-[500px]">
-        <div className="overflow-hidden rounded-xl mb-4">
-          <img
-            src="/aoobanniere2.png"
-            alt="Image haut droit"
-            className="w-full h-[150px] object-cover transform transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
-        <h3 className="text-lg font-bold text-white">Inscription Ark of Osiris 10/08 22h UTC</h3>
-      </div>
-    </Link>
+        {/* Colonne droite */}
+        <div className="md:w-full flex flex-col gap-6">
+          {/* Rectangle haut droit */}
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLScSijpJgH_FhIbQ2VkCvdQ6IN0bZdKznTGzFIYELwFLu7Wu3w/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group"
+          >
+            <div className="bg-white/08 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer md:w-[500px]">
+              <div className="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="/aoobanniere2.png"
+                  alt="Image haut droit"
+                  className="w-full h-[150px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-white">Inscription Ark of Osiris 10/08 22h UTC</h3>
+            </div>
+          </Link>
 
-    {/* Rectangle bas droit */}
-    <Link href="/page-bas-droit" className="group">
-      <div className="bg-white/0 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer md:w-[500px]">
-        <div className="overflow-hidden rounded-xl mb-4">
-          <img
-            src="/mgebanniere.png"
-            alt="Image bas droit"
-            className="w-full h-[130px] object-cover transform transition-transform duration-300 group-hover:scale-105"
-          />
+          {/* Rectangle bas droit */}
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdzBN7kSuuvXq26nmgv0g3PCb68esHGUSi2j3mFA0OCU9COpQ/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group"
+          >
+            <div className="bg-white/0 backdrop-blur-md hover:bg-white/10 transition rounded-2xl shadow-md hover:shadow-xl p-4 cursor-pointer md:w-[500px]">
+              <div className="overflow-hidden rounded-xl mb-4">
+                <img
+                  src="/mgebanniere.png"
+                  alt="Image bas droit"
+                  className="w-full h-[130px] object-cover transform transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <h3 className="text-lg font-bold text-white">Inscription MGE INF 28/07</h3>
+            </div>
+          </Link>
         </div>
-        <h3 className="text-lg font-bold text-white">Inscription MGE</h3>
-      </div>
-    </Link>
-  </div>
-</section>
+      </section>
     </div>
   );
 }
